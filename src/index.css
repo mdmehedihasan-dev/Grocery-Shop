@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.half-underline {
+  position: relative;
+  display: inline-block; /* Ensure the underline matches the text width */
+}
+
+.half-underline::after {
+  content: ""; /* Add an empty content for the underline */
+  position: absolute;
+  bottom: -5px; /* Position the underline at the bottom */
+  left: 25%; /* Shift it to the center */
+  width: 20px; /* Set the underline width to half of the text */
+  height: 3px; /* Thickness of the underline */
+  background-color: #749B3F; /* Color of the underline */
+  border-radius: 20px;
+}
