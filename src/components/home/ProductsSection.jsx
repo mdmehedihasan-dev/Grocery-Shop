@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Title from "../Title";
+import Heading from "../Heading";
 
 // Product List
 const products = [
@@ -37,8 +39,9 @@ const ProductsSection = () => {
       <div className="px-4 mx-auto max-w-7xl">
         {/* Header */}
         <div className="space-y-4 text-center">
-          <h2 className="text-xl font-bold">Our Products</h2>
-          <h1 className="text-3xl font-bold">Our Fresh Products</h1>
+          <Title title={'Our Products'} />
+          <Heading heading={'Our Fresh Products'} />
+          
           <p className="px-0 mb-8 text-gray-600 md:px-96">
             We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients.
           </p>
